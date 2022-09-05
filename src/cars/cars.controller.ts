@@ -4,7 +4,6 @@ import {
   Delete,
   Get,
   Param,
-  ParseIntPipe,
   ParseUUIDPipe,
   Patch,
   Post,
@@ -13,7 +12,7 @@ import {
 } from '@nestjs/common';
 import { CarsService } from './cars.service';
 import { CreateCarDto } from './dto/create-car.dto';
-import { Car } from '../../dist/*/cars/interfaces/car.interface';
+import { Car } from './interfaces/car.interface';
 import { UpdateCarDto } from './dto/update-car.dto';
 
 @Controller('cars')
